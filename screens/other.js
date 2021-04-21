@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text ,Image, TouchableOpacity} from 'react-native'
+import { View, Text ,Image, TouchableOpacity,Linking} from 'react-native'
 import Animated from 'react-native-reanimated'
 import IonIcons from 'react-native-vector-icons/Ionicons'
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
@@ -16,7 +16,7 @@ export default function other({navigation}) {
                     <Text>   Đăng nhập để tiếp tục</Text>
                     <SimpleLineIcons name="arrow-right" size={20} style={{marginRight:15}}></SimpleLineIcons>
                 </View></TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=> Linking.openURL('https://soyagarden.com/')}>
                 <View style={{flexDirection:'row',marginLeft:15,marginRight:15,borderBottomWidth:1,borderColor:'silver',marginBottom:3,height:50,marginTop:5,alignItems:'center'}}>
                     <View style={{justifyContent:'center',alignItems:'center',borderRadius:40,backgroundColor:'silver',height:40,width:40}}>
                         <IonIcons name="help-circle-outline" size={30}></IonIcons>
@@ -24,7 +24,7 @@ export default function other({navigation}) {
                     <Text>   Hỏi đáp</Text>
                     <SimpleLineIcons name="arrow-right" size={20} style={{marginRight:15}}></SimpleLineIcons>
                 </View></TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=> Linking.openURL('https://play.google.com/store/apps/details?id=com.soyagarden.android')}>
                 <View style={{flexDirection:'row',marginLeft:15,marginRight:15,borderBottomWidth:1,borderColor:'silver',marginBottom:3,height:50,marginTop:5,alignItems:'center'}}>
                     <View style={{justifyContent:'center',alignItems:'center',borderRadius:40,backgroundColor:'silver',height:40,width:40}}>
                         <IonIcons name="star-outline" size={25}></IonIcons>
