@@ -25,7 +25,7 @@ const DATA1 = Array(10).fill('').map((e, i) => ({
 }))
 const DATA2 = Array(10).fill('').map((e, i) => ({
   id: i + 1,
-  photo: 'https://storage.googleapis.com/senpoint-media-release/static/common/img/shops-contents/942a98df3f59043c6cc64e2749f3308b.jpg',
+  photo: 'https://soyagarden.com/content/uploads/2020/09/118649411_4295276030547354_6614295648694420106_n.jpg',
   name: `BTS MỚI | ĐỘC THÂN ẤM ÁP VỚI CHÚT NGỌT NGÀO CỦA "DEAR WINTER" ${" " + (i + 1)}`,
 }))
 
@@ -58,7 +58,7 @@ export default function home({ navigation }) {
     </TouchableOpacity>
   );
   return (
-    <View>
+    <View style={{flex:1}}>
       <View style={{ backgroundColor: '#F9E131', height: 160, borderBottomRightRadius: 30, borderBottomLeftRadius: 30 }}>
         <View style={{height:160,width:200, borderBottomRightRadius:200, backgroundColor:'#FECE02' }}>
         <View style={{ flexDirection: 'row', marginLeft: 35, marginTop: 5,}}>
@@ -140,7 +140,7 @@ export default function home({ navigation }) {
               style={{ marginBottom: 10 }}
             />
           </View>
-          <View style={{ backgroundColor: 'white', marginTop: 5, marginBottom: 50, fontWeight: 'bold' }}>
+          <View style={{ backgroundColor: 'white', marginTop: 5, fontWeight: 'bold' }}>
             <View style={{ flexDirection: 'row', marginTop: 15, justifyContent: 'space-between' }}>
               <Text style={{ textAlign: 'left', marginBottom: 15, marginLeft: 15, fontWeight: 'bold' }}>Tin tức</Text>
               <SimpleLineIcons name='arrow-right' size={15} style={{ marginRight: 10 }} />
@@ -151,7 +151,7 @@ export default function home({ navigation }) {
               horizontal={true}
               showsHorizontalScrollIndicator={false}
               keyExtractor={item => item.id}
-              style={{ marginBottom: 50 }}
+              style={{ marginBottom:10 }}
             />
           </View>
         </View>
